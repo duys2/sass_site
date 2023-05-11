@@ -1,0 +1,40 @@
+.gbtn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: $gbtnColor;
+  border: 1px solid $borderColorPrimary;
+  &:hover {
+    color: $gbtnColor;
+    background-color: white;
+  }
+}
+
+// 아코디언
+dl {
+  width: 800px;
+  margin: 50px auto;
+}
+
+dt {
+  font-size: 18px;
+  text-indent: 1rem;
+  color: white;
+  line-height: 35px;
+  height: 35px;
+  background-color: black;
+}
+
+dd {
+  height: 300px;
+  background-color: #d4d0c8;
+}
+
+dd p {
+  /* text-indent: 1rem; */
+  padding: 20px;
+}
