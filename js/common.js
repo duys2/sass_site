@@ -1,6 +1,7 @@
 $(function () {
   // page 로드 이후 주소값 가져오기
   var currentHref = splitHref($(location));
+  console.log(currentHref);
 
   // console.log('#header');
   // console.log($('body'));
@@ -69,11 +70,11 @@ $(function () {
   // 아코디언 초기화
   var acElem = $('.accordion');
 
-  acElem.find$('dd:not(:first)').css('display', 'none');
-  acElem.find$('dl dt').click(function () {
+  acElem.find($('dd:not(:first)').css('display', 'none'));
+  acElem.find($('dl dt').click(function () {
     if ($('+dd', this).css('display') == 'none') {
       $('dl dd').slideUp('slow');
       $('+dd', this).slideDown('slow');
     }
-  });
+  }));
 });
