@@ -19,7 +19,7 @@ $(function () {
   //   });
   // });
 
-  if (currentHref == 'index') {
+  if (currentHref == 'index' || currentHref == ' ') {
     $('#header').load('./include/header.html');
     $('#footer').load('./include/footer.html');
   } else {
@@ -61,7 +61,7 @@ $(function () {
     // console.log($(this).attr('href'));
     // console.log(splitHref($(this)));
     var matchHref = splitHref($(this));
-    console.log(currentHref, matchHref);
+    // console.log(currentHref, matchHref);
     if (currentHref == matchHref) {
       $(this).addClass('on');
     }

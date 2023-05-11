@@ -1,7 +1,7 @@
 &copy; copyright all rights reserved.
 <script>
   var thisLocation = $(location);
-  console.log(thisLocation);
+  // console.log(thisLocation);
   function hrefChange(el, path) {
     $(el).each(function () {
       var matchHref = $(this).attr('href').split('/');
@@ -10,7 +10,7 @@
     });
   };
 
-  console.log(thisLocation.attr('href').indexOf('index.html'));
+  // console.log(thisLocation.attr('href').indexOf('index.html'));
   if (thisLocation.attr('href').indexOf('index.html') < 0) {
     // hrefChange('#top-nav a', '..');
     // hrefChange('#top-logo a', '../index.html');
